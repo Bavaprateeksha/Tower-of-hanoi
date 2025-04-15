@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <title>🗼 Tower of Hanoi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🧠 Tower of Hanoi Challenge</h1>
+  <p class="subtitle">Move all disks from <b>Pole A</b> to <b>Pole C</b> using <b>Pole B</b>. One at a time!</p>
+
+  <label>🎯 Number of disks (1–6):</label>
+  <input type="number" id="diskInput" min="1" max="6" value="3">
+  <button onclick="startHanoi()">🚀 Start Challenge</button>
+
+  <div id="game">
+    <div class="pole-container">
+      <div class="pole" id="A"></div>
+      <div class="pole-label">Pole A</div>
+    </div>
+    <div class="pole-container">
+      <div class="pole" id="B"></div>
+      <div class="pole-label">Pole B</div>
+    </div>
+    <div class="pole-container">
+      <div class="pole" id="C"></div>
+      <div class="pole-label">Pole C</div>
+    </div>
+  </div>
+
+  <div id="message"></div>
+  <div id="counter">🧮 Moves: <span id="moveCount">0</span></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
