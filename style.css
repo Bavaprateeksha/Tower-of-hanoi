@@ -1,0 +1,116 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #001f3f, #003366);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #00e6e6;
+  text-shadow: 1px 1px 3px rgba(0, 230, 230, 0.3);
+  letter-spacing: 0.8px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #a0e9ff;
+}
+
+input, button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+input {
+  width: 60px;
+  text-align: center;
+}
+
+button {
+  background-color: #00b894;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00cec9;
+}
+
+#game {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.pole-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pole {
+  width: 10px;
+  height: 300px;
+  background: white;
+  position: relative;
+  border-radius: 5px;
+}
+
+.pole-label {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #00ffe1;
+  text-shadow: 0 0 4px #00ffe1;
+  font-family: 'Poppins', monospace;
+}
+
+.disk {
+  position: absolute;
+  height: 20px;
+  background: linear-gradient(45deg, orange, orangered);
+  border-radius: 4px;
+  transition: all 0.5s ease;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  line-height: 20px;
+}
+
+#message {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #00ffcc;
+  animation: popIn 1s ease;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#counter {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #ffeaa7;
+}
